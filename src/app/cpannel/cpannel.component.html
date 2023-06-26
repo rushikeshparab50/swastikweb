@@ -1,0 +1,165 @@
+<mat-toolbar color="warn" class="navbar"> 
+  <span >swastik infosystem</span>
+ <span >   <button mat-button color="white" routerLink="/home" routerLinkactive="active" >Home</button>
+</span>
+
+<span><button mat-button [matMenuTriggerFor]="afterMenu" class="b1">Web Development</button>
+  <mat-menu #afterMenu="matMenu" xPosition="after">
+    <button mat-menu-item routerLink="/cpannel" routerLinkactive="active">PHP Development</button>
+    <button mat-menu-item routerLink="/domain" routerLinkactive="active"> React Development</button>
+  </mat-menu></span>
+
+ 
+
+  <span >   <button mat-button color="white" routerLink="/hire" routerLinkactive="/contactus" >Hire Developer</button>
+  </span>
+
+<span><a routerLink="/domain" routerLinkactive="active"></a> </span>
+
+<span >   <button mat-button color="white" routerLink="/contact" routerLinkactive="/contact" >contactus</button>
+</span>
+
+
+</mat-toolbar>
+<mat-grid-list cols="2" rowHeight="4:2.8">
+  <mat-grid-tile><h1 style="text-align: center;margin-top: 10px;">PHP<br><h2> Web Development
+  </h2><h4>Hyperlink Infosystem Provides Best PHP Development <br>For Our Customers
+
+  </h4><br><br>
+    <button mat-raised-button  color="accent" (click)="openDialog()">Get Quote</button>
+   </h1> 
+   
+   
+  
+    <br></mat-grid-tile>
+  <mat-grid-tile><img src="./assets/p1.jpg"></mat-grid-tile>
+  
+</mat-grid-list>
+<mat-grid-list  cols="5" rowHeight="2:1">
+  <h1 style="text-align: center;">Our Partenrs</h1>
+  <mat-grid-tile>
+<mat-card><img src="./assets/npci.png"></mat-card>
+  </mat-grid-tile>
+  <mat-grid-tile><img src="./assets/hitachi.png"><mat-card></mat-card></mat-grid-tile>
+  <mat-grid-tile><mat-card><img src="./assets/ceat.png"></mat-card></mat-grid-tile>
+  <mat-grid-tile><mat-card><img src="./assets/disney.png"></mat-card></mat-grid-tile>
+  <mat-grid-tile><mat-card><img src="./assets/google.png"></mat-card></mat-grid-tile>
+  
+  
+</mat-grid-list>
+<mat-grid-list cols="1" rowHeight="4:1">
+
+  <mat-grid-tile><h2 style="text-align: 
+  center;">Why Your Business May Need A PHP Based Web Solution
+  <br>
+<h4 style="text-align: 
+center;">
+For the newbies among us, PHP is a web development language that has been widely adopted for multiple websites throughout the world. It also has its uses in general programming functions. Literally millions of websites are now running on the PHP language which means that your e-commerce business may need to be founded on the PHP language as well to facilitate smooth operations with other PHP based websites. If you are looking for a developer to make a PHP based web solution for you, Hyperlink InfoSystem could be the right company for the job.
+ 
+One benefit of switching to PHP is that it is free software based on the PHP License. Most web servers can accommodate a site built on PHP so that eases one problem from your list of worries. Most operating systems or platforms will also accept the PHP as a standalone shell as well. So not only do you get it free of charge but you can use PHP without worrying much that it cannot be compatible with servers, operating systems or platforms. By assuring compatibility, it means your e-commerce site can function smoothly most of the time. If you do encounter any problems that need a technical solution, turn to Hyperlink InfoSystem to provide that assistance.
+ </h4></h2></mat-grid-tile>
+  
+
+</mat-grid-list >
+
+<mat-grid-list  cols="4" rowHzaeight="4.5:2.8"><h1 style="text-align: 
+  center;">Process We Follow
+  </h1><br>
+
+<mat-grid-tile>
+<br>
+<mat-card><mat-card class="example-card">
+<mat-card-header>
+  <mat-card-subtitle></mat-card-subtitle>
+  <mat-card-title ><mat-icon>assignment</mat-icon>
+    <br>1. Requirement Gathering
+    <br></mat-card-title>
+</mat-card-header>
+<mat-card-content>
+  <p style="text-align: center;">We follow the firstpriority of <br>gathering requirements, and information to <br>begin our project.
+
+  </p>
+ <p></p>
+  <mat-divider></mat-divider>
+</mat-card-content>
+
+  
+
+<mat-card-footer>
+  <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+</mat-card-footer>
+</mat-card></mat-card>
+</mat-grid-tile>
+<mat-grid-tile><mat-card class="example-card">
+  <mat-card-header>
+    <mat-card-subtitle></mat-card-subtitle>
+    <mat-card-title  style="text-align: center;"><mat-icon style="text-align: center;">computer</mat-icon>
+      <br style="text-align: center;">2. UI/UX Design
+      <br></mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <p style="text-align: center;" >We create catchy and charming designs<br> with the latest tools of designing <br>to make it a best user-friendly<br> experience.
+
+      
+   <p></p>
+    <mat-divider></mat-divider>
+  </mat-card-content>
+  
+    
+  
+  <mat-card-footer>
+    <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+  </mat-card-footer>
+</mat-card></mat-grid-tile>
+<mat-grid-tile><mat-card><mat-card class="example-card">
+  <mat-card-header>
+    <mat-card-subtitle></mat-card-subtitle>
+    <mat-card-title  style="align-content: center;"> <mat-icon style="text-align: center">developer_board</mat-icon>
+      <br>3. Prototype
+      
+
+    </mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <p style="text-align: center;">
+      After designing, you will get your prototype,<br> which will be sent ahead for the<br> development process for<br> the product.
+
+
+
+    </p>
+  
+
+  </mat-card-content>
+ 
+  <mat-card-footer>
+    <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+  </mat-card-footer>
+</mat-card> </mat-card></mat-grid-tile>
+
+<mat-grid-tile><mat-card class="example-card">
+    <mat-card-header>
+      <mat-card-subtitle></mat-card-subtitle>
+      <mat-card-title  style="align-content: center;"> <mat-icon style="text-align: center;">swap_horiz</mat-icon>
+        <br>     4. Deployment
+
+      </mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <p style="text-align: center;">
+        After trial and following all processes,<br> your app is ready to launch on <br>the App store or Play Store.
+
+      </p>
+    
+
+    </mat-card-content>
+   
+    <mat-card-footer>
+      <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+    </mat-card-footer>
+  </mat-card></mat-grid-tile>
+
+
+</mat-grid-list>
+
+
+<app-footer><h4></h4></app-footer>

@@ -1,0 +1,101 @@
+<button mat-icon-button style="float: right;margin: 5px;"class="form">
+	<mat-icon>close</mat-icon></button>
+  <form class="example-form"><mat-toolbar>
+    <span class="example-spacer"><mat-toolbar color="success">
+      <span >Please Fill The Form</span>
+    </mat-toolbar></span>
+  </mat-toolbar>
+
+     
+    
+    <table class="example-full-width" cellspacing="0"><tr>
+      <td> <p>
+        <mat-form-field appearance="fill" style="margin: 5px;" class="form">
+           <mat-label> Enter Name</mat-label>
+           <input matInput placeholder="Name"  [formControl]="NameFromControl" >
+           <mat-error *ngIf=" NameFromControl.hasError('required')">please enter your name</mat-error>
+           <mat-icon matSuffix>person</mat-icon>
+          
+         </mat-form-field>
+       </p></td>
+      <br><tr> <p>
+      
+       </p><tr>
+    </tr></table>
+    <p>
+      <mat-form-field class="form" appearance="fill">
+        <mat-label>Enter your email</mat-label>
+        <input matInput placeholder="Email" [formControl]=" emailFromControl" >
+        <mat-error *ngIf=" emailFromControl.hasError('required')">Email is required</mat-error>
+        <mat-error  *ngIf=" emailFromControl.hasError('email') && !emailFromControl.hasError('required')">
+          please enter a valid email id
+        </mat-error>
+      </mat-form-field>
+    </p>
+
+    <p>
+      <mat-form-field class="form" appearance="fill">
+        <mat-label> Your Message</mat-label>
+        <textarea matInput placeholder="Ex. 100 Main St" [formControl]=" AddressFromControl" >enter your Message</textarea>
+        <mat-error *ngIf="AddressFromControl.hasError('required')">Message is required</mat-error>
+
+      </mat-form-field>
+      </p>
+    
+    
+  <tr>
+    <td  ><input type = "submit"  style=" margin-left: 120px; " class=" submit"value = "submit"></td>
+
+  </form>
+   <!-- .  <mat-toolbar>
+    <span class="example-spacer"><mat-toolbar color="success">
+      <span >Please Fill The Form</span>
+    </mat-toolbar></span>
+  </mat-toolbar>
+
+
+  
+  <p>
+   <mat-form-field appearance="fill" style="margin: 5px;" class="form">
+      <mat-label> Enter Name</mat-label>
+      <input matInput placeholder="Name"  [formControl]="NameFromControl" >
+      <mat-error *ngIf=" NameFromControl.hasError('required')">please enter your name</mat-error>
+      <mat-icon matSuffix>person</mat-icon>
+     
+    </mat-form-field>
+  </p>
+  <p>
+    <mat-form-field class="form" appearance="fill">
+      <mat-label>Enter your email</mat-label>
+      <input matInput placeholder="Email" [formControl]=" emailFromControl" >
+      <mat-error *ngIf=" emailFromControl.hasError('required')">Email is required</mat-error>
+      <mat-error  *ngIf=" emailFromControl.hasError('email') && !emailFromControl.hasError('required')">
+        please enter a valid email id
+      </mat-error>
+    </mat-form-field>
+  </p>
+  <p>
+    <mat-form-field appearance="outline" style="margin: 5px;"class="form">
+      <mat-label> Comment</mat-label>
+      <input matInput placeholder="Comment">
+      <mat-icon matSuffix></mat-icon> <p><br> <input type = "submit"  style=" margin-left: 250px; " class=" submit"value = "submit"></p>
+     
+    </mat-form-field>
+  </p>
+  <P>
+    
+   <button mat-raised-button color="primary"    style= "float:left; margin: 5px;">Send</button>
+  <button mat-raised-button color="warn" style= "float:right; margin: 5px;">Cancel</button>
+  <!-- . <form [formGroup] ="loginFrom" (ngSubmit)="loginUser()">
+    <input type="text" placeholder="enter name" formControlName="user">
+    <br>
+    <span style="color:red;" *ngIf="user && user.invalid && user.touched">this input is invalid</span>
+    <br>
+    <br>
+    <input type="text" placeholder="enter email" formControlName="email">
+    <br>
+    <span style="color:red;" *ngIf="password && password user.invalid && user.touched">this input is invalid</span>
+    <br>
+    ,<br>
+    <button [disabled]="loginForm.invalid">login</button>
+  </form>-->

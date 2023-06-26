@@ -1,0 +1,132 @@
+<mat-toolbar color="warn" class="navbar"> 
+    <span >Genius Hosting</span>
+   <span >   <button mat-button color="white" routerLink="/home" routerLinkactive="active" >Home</button>
+  </span>
+  
+  <span><button mat-button [matMenuTriggerFor]="afterMenu" class="b1" routerLink="/webhosting" routerLinkactive="active">Web Hosting</button>
+    <mat-menu #afterMenu="matMenu" xPosition="after">
+      <button mat-menu-item routerLink="/cPannel" routerLinkactive="active">cPannel Hosting</button>
+      <button mat-menu-item>Business Hosting</button>
+    </mat-menu></span>
+  <span><button mat-button [matMenuTriggerFor]="afterMenu" class="b1" routerLink="/servers" routerLinkactive="active">Servers</button>
+    <mat-menu #afterMenu="matMenu" xPosition="after">
+      <button mat-menu-item>Windows VPS</button>
+      <button mat-menu-item>cloud Servers</button>
+    </mat-menu></span>
+  
+  <span ><button mat-button class="b1" routerLink="/domain" routerLinkactive="active">Domain</button>
+  </span>
+  <span><a routerLink="/domain" routerLinkactive="active"></a> </span>
+
+  <span >   <button mat-button color="white" routerLink="/contact" routerLinkactive="active" >contactus</button>
+  </span>
+  
+  
+  </mat-toolbar>
+  <mat-grid-list cols="2" rowHeight="4:1.4">
+    <mat-grid-tile><h1 style="text-align: center;margin-top: 10px;">Managed Virtual Servers
+       
+        <br>Reliable, High Performance VPS with NVMe Powered Storage.<br>
+     <h4>Don’t be left high and dry. Choose a managed Linux VPS<br> that gives you professional, 24x7 support, superior <br>performance and reliability, backed by a host with over 21 <br>years’ experience.
+      <button mat-raised-button  color="accent" (click)="openDialog()">Open dialog</button>
+     </h4> </h1> 
+     
+     
+    
+      <br></mat-grid-tile>
+    <mat-grid-tile><img src="./assets/server.png"></mat-grid-tile>
+    
+  </mat-grid-list>
+  <mat-grid-list cols="3" rowHeight="8.9:4.1">
+ <mat-grid-tile> <mat-card  style= "width:95%"
+  >
+    <mat-card-header>
+      <mat-card-title>Hyperslice VPS SG1</mat-card-title>
+      <mat-card-subtitle></mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content><li>2 CPU Cores</li>
+    <li> 2 GB RAMHigh performance ECC memory.</li> 
+     <li> 35 GB NVMe Storage</li>
+     <li>2 GB RAM</li>
+   
+     </mat-card-content>
+     <mat-card-content align="end">$7 monthly</mat-card-content>
+    <mat-card-actions align="end">
+      <button mat-raised-button color="primary">Order Now</button>
+     
+    </mat-card-actions>
+    <mat-card-footer><mat-progress-bar mode="indeterminate"></mat-progress-bar></mat-card-footer>
+  </mat-card></mat-grid-tile>
+   
+
+    <mat-grid-tile>
+    <mat-card style= "width:95%"
+    >
+      <mat-card-header>
+        <mat-card-title>Hyperslice VPS SG5</mat-card-title>
+        <mat-card-subtitle></mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>  <li>6 CPU Cores Fast Intel Xeon based virtual cores.</li>
+       <li> 8 GB RAM</li>
+       <li> 200 GB NVMe Storage</li>
+       <li>Daily Snapshot</li>
+      
+       </mat-card-content>
+       <mat-card-content align="end">$8 monthly</mat-card-content>
+      <mat-card-actions align="end">
+        <button mat-raised-button color="primary">Order Now</button>
+
+
+      </mat-card-actions>
+     <mat-card-footer><mat-progress-bar mode="indeterminate"></mat-progress-bar></mat-card-footer>
+    </mat-card></mat-grid-tile>
+    <mat-grid-tile>
+    <mat-card  style= "width:95%"
+    >
+      <mat-card-header>
+        <mat-card-title>Hyperslice VPS SG4</mat-card-title>
+        <mat-card-subtitle></mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content> <li>4 CPU Cores</li>
+      <li> 6 GB RAM</li>
+      <li>125 GB NVMe Storage</li>
+      <li> Daily Snapshot</li>
+     
+       </mat-card-content>
+       <mat-card-content align="end">$7 monthly</mat-card-content>
+      <mat-card-actions align="end">
+        <button mat-raised-button color="primary">Order Now</button>
+       
+      </mat-card-actions>
+      <mat-card-footer><mat-progress-bar mode="indeterminate"></mat-progress-bar></mat-card-footer>
+    </mat-card></mat-grid-tile>
+  </mat-grid-list >
+  
+  <mat-grid-list cols="3" rowHeight="8.8:2.7"  class="grid">
+    <mat-grid-tile  ><h4>30-Day Money Back
+
+      <br>
+      <h5>Get your money back if you change your<br> mind. No quibble, just simple and fair.
+
+      </h5> </h4>
+     </mat-grid-tile>
+    <mat-grid-tile><h4>99.9% network uptime SLA
+
+      <br>
+      <h5>Ensuring your applications are always <br>available. Our guarantee to you.
+
+
+      </h5>
+      </h4>
+   </mat-grid-tile>
+    <mat-grid-tile><h4>Professional Support 24x7
+
+      <br>
+      <h5>24x7 technical support whenever you need it<br> - by phone, live chat or ticket.
+
+      </h5></h4>
+    </mat-grid-tile>
+   
+  </mat-grid-list>
+  
+  <app-footer><h4></h4></app-footer>

@@ -1,0 +1,391 @@
+<mat-toolbar color="warn" class="navbar"> 
+    <span >swastik infosystem</span>
+   <span >   <button mat-button color="white" routerLink="/home" routerLinkactive="active" >Home</button>
+  </span>
+  
+  <span><button mat-button [matMenuTriggerFor]="afterMenu" class="b1">Web Development</button>
+    <mat-menu #afterMenu="matMenu" xPosition="after">
+      <button mat-menu-item routerLink="/cpannel" routerLinkactive="active">PHP Development</button>
+      <button mat-menu-item routerLink="/domain" routerLinkactive="active">React Development</button>
+    </mat-menu></span>
+  
+    <span >   <button mat-button color="white" routerLink="/hire" routerLinkactive="/contactus" >Hire Developer</button>
+    </span>
+  <span >   <button mat-button color="white" routerLink="/contact" routerLinkactive="/contact" >contactus</button>
+  </span>
+  
+  
+  </mat-toolbar>
+  <mat-grid-list cols="2" rowHeight="4:2.8">
+    <mat-grid-tile><h1 style="text-align: center;margin-top: 10px;">Hire Web Developers
+
+        <br>
+      <br><h4>Hire Web Developers From Hyperlink InfoSystem For The <br> Best Web Development
+  
+    </h4><br><br>
+      <button mat-raised-button  color="accent" (click)="openDialog()">Get Quote</button>
+     </h1> 
+     
+     
+    
+      <br></mat-grid-tile>
+    <mat-grid-tile><img src="./assets/Hire.jpg"></mat-grid-tile>
+    
+  </mat-grid-list><h1 style="text-align: center;">Pricing Plans
+  </h1><br><h4 style="text-align: center;">Hire Dedicated resources from Swastik InfoSystem Starts from,
+
+</h4>
+  <mat-grid-list cols="3" rowHeight="2:1.5">
+  <mat-grid-tile> <mat-card><mat-card class="example-card">
+  <mat-card-header>
+    <mat-card-title ></mat-card-title>
+  
+   
+  </mat-card-header>
+  <mat-card-content>
+    <h2  style="text-align: center;"><br>Hourly
+    </h2>
+    <p style="text-align: center;">For short-term project or need a<br> specialized service, hire our skilled Web developers on an hourly basis.<br>
+    <h2>$ 23.00 /Hour</h2> 
+    <button mat-raised-button color="accent" routerLink="/contact" >Hire Now</button>
+
+ 
+
+
+
+  
+    
+   <p></p>
+    <mat-divider></mat-divider>
+  </mat-card-content>
+  
+    
+  
+  <mat-card-footer>
+    <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+  </mat-card-footer>
+  </mat-card></mat-card></mat-grid-tile>
+  <mat-grid-tile> <mat-card><mat-card class="example-card">
+    <mat-card-header>
+      <mat-card-title ></mat-card-title>
+    
+     
+    </mat-card-header>
+    <mat-card-content>
+      <h2  style="text-align: center;"><br>Monthly
+
+      </h2>
+      <p style="text-align: center;">For rather precise, limited budget and long-term partnership, consider a source of Web developers on a monthly basis.
+        <h2>$ 2890.00 /Month
+        </h2>
+
+
+      <button mat-raised-button color="accent" routerLink="/contact" >Hire Now</button>
+  
+   
+  
+  
+  
+    
+      
+     <p></p>
+      <mat-divider></mat-divider>
+    </mat-card-content>
+    
+      
+    
+    <mat-card-footer>
+      <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+    </mat-card-footer>
+    </mat-card></mat-card></mat-grid-tile>
+  <mat-grid-tile> <mat-card><mat-card class="example-card">
+    <mat-card-header>
+      <mat-card-title ></mat-card-title>
+    
+     
+    </mat-card-header>
+    <mat-card-content>
+      <h2  style="text-align: center;"><br>Quarterly
+
+      </h2>
+      <p style="text-align: center;">If you need constant support  and project requirements may change then hire Web developers on a quarterly basis.
+
+
+      <h2>$ 7999.00 /Quarter
+      </h2> 
+      <button mat-raised-button color="accent" routerLink="/contact" >Hire Now</button>
+  
+   
+  
+  
+  
+    
+      
+     <p></p>
+      <mat-divider></mat-divider>
+    </mat-card-content>
+    
+      
+    
+    <mat-card-footer>
+      <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+    </mat-card-footer>
+    </mat-card></mat-card></mat-grid-tile>
+
+</mat-grid-list>
+
+  <mat-grid-list  cols="5" rowHeight="2:1">
+    <h1 style="text-align: center;">Our Partenrs</h1>
+    <mat-grid-tile>
+  <mat-card><img src="./assets/npci.png"></mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile><img src="./assets/hitachi.png"><mat-card></mat-card></mat-grid-tile>
+    <mat-grid-tile><mat-card><img src="./assets/ceat.png"></mat-card></mat-grid-tile>
+    <mat-grid-tile><mat-card><img src="./assets/disney.png"></mat-card></mat-grid-tile>
+    <mat-grid-tile><mat-card><img src="./assets/google.png"></mat-card></mat-grid-tile>
+    
+    
+  </mat-grid-list>
+  
+
+  <mat-grid-list cols="1" rowHeight="2:1">
+  <h1 style="text-align: center;">  Get Free Quote Now !</h1>
+ <br><h4 style="text-align: center;"> Got An Idea? Leave A Message To Us And We Will Reach Out To You Soon.</h4>
+
+
+
+    <mat-grid-tile><form class="example-form">
+     
+    
+      <table class="example-full-width" cellspacing="0"><tr>
+        <td> <p>
+          <mat-form-field appearance="fill" style="margin: 5px;" class="form">
+             <mat-label> Enter Name</mat-label>
+             <input matInput placeholder="Name"  [formControl]="NameFromControl" >
+             <mat-error *ngIf=" NameFromControl.hasError('required')">please enter your name</mat-error>
+             <mat-icon matSuffix>person</mat-icon>
+            
+           </mat-form-field>
+         </p></td>
+        <td> <p>
+          <mat-form-field appearance="fill" style="margin: 5px;" class="form">
+             <mat-label>Last Name</mat-label>
+             <input matInput placeholder="Name"  [formControl]="LastNameFromControl" >
+             <mat-error *ngIf="LastNameFromControl.hasError('required')">please enter Last name</mat-error>
+             <mat-icon matSuffix>person</mat-icon>
+            
+           </mat-form-field>
+         </p><td>
+      </tr></table>
+      <p>
+        <mat-form-field class="form" appearance="fill">
+          <mat-label>Enter your email</mat-label>
+          <input matInput placeholder="Email" [formControl]=" emailFromControl" >
+          <mat-error *ngIf=" emailFromControl.hasError('required')">Email is required</mat-error>
+          <mat-error  *ngIf=" emailFromControl.hasError('email') && !emailFromControl.hasError('required')">
+            please enter a valid email id
+          </mat-error>
+        </mat-form-field>
+      </p>
+
+      <form class="example-form">
+        <mat-form-field class="example-full-width">
+          <mat-label>Telephone</mat-label>
+          <span matPrefix>+1 &nbsp;</span>
+          <input type="tel" matInput placeholder="555-555-1234" [formControl]=" emailFromControl">
+          <mat-icon matSuffix>mode_edit</mat-icon>
+          <mat-error *ngIf=" emailFromControl.hasError('required')">Email is required</mat-error>
+        </mat-form-field>
+      </form>
+      
+      <p>
+        <mat-form-field class="example-full-width">
+          <mat-label>Address</mat-label>
+          <textarea matInput placeholder="Ex. 100 Main St" [formControl]=" AddressFromControl" >enter your address</textarea>
+          <mat-error *ngIf="AddressFromControl.hasError('required')">Address is required</mat-error>
+
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+          <mat-label>Skype</mat-label>
+          <textarea matInput  [formControl]="skypeFromControl"></textarea>
+          <mat-error *ngIf="skypeFromControl.hasError('required')">Skype required</mat-error>
+        </mat-form-field>
+      </p>
+    
+      <table class="example-full-width" cellspacing="0"><tr>
+        <td><mat-form-field class="example-full-width">
+          <mat-label>City</mat-label>
+          <input matInput placeholder="Ex. San Francisco" [formControl]="CityFromControl ">
+          <mat-error *ngIf="CityFromControl .hasError('required')">please enter city</mat-error>
+        </mat-form-field></td>
+        <td><mat-form-field class="example-full-width">
+          <mat-label>State</mat-label>
+          <input matInput placeholder="Ex. California" [formControl]="StateFromControl ">
+          <mat-error *ngIf="StateFromControl.hasError('required')">please enter State</mat-error>
+        </mat-form-field></td>
+        <td><mat-form-field class="example-full-width">
+          <mat-label>Postal Code</mat-label>
+          <input matInput #postalCode maxlength="5" placeholder="Ex. 94105" value="94043"  [formControl]="postalFromControl">
+          <mat-error *ngIf="postalFromControl.hasError('required')">please enter postal code</mat-error>
+          <mat-hint align="end">{{postalCode.value.length}} / 5</mat-hint>
+        </mat-form-field></td>
+      </tr>
+    <tr>
+      <td  ><input type = "submit"  style=" margin-left: 250px; " class=" submit"value = "submit"></td>
+    </tr></table>
+    </form>
+    </mat-grid-tile>
+    
+  
+  </mat-grid-list >
+  
+
+
+
+  <mat-grid-list  cols="4" rowHzaeight="4.5:2.8"><h1 style="text-align: 
+    center;">Leverage World-Class Talent
+
+
+    </h1><br>
+  
+  <mat-grid-tile>
+  <br>
+  <mat-card><mat-card class="example-card">
+    <mat-card-header>
+      <mat-card-title ></mat-card-title>
+    
+     
+    </mat-card-header>
+    <mat-card-content>
+      <h2  style="text-align: center;"><img src="./assets/j.svg" class="img" style="align-items: center;"><br>Senior Developers
+
+      </h2>
+      <p style="text-align: center;">Senior Developers having 2 to 8 years of experience are highly skilled and proficient throughout the development process.<br> They bring the best in the development
+    
+  
+   
+  
+  
+  
+    
+      
+     <p></p>
+      <mat-divider></mat-divider>
+    </mat-card-content>
+    
+      
+    
+    <mat-card-footer>
+      <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+    </mat-card-footer>
+    </mat-card></mat-card></mat-grid-tile>
+  <mat-grid-tile><br>
+    <mat-card><mat-card class="example-card">
+      <mat-card-header>
+        <mat-card-title ></mat-card-title>
+      
+       
+      </mat-card-header>
+      <mat-card-content>
+        <h2  style="text-align: center;"><img src="./assets/pm.svg" class="img" style="align-items: center;"><br>Project Managers
+
+  
+        </h2>
+        <p style="text-align: center;">Our project managers are well aware of how to handle and execute projects. Hyperlink InfoSystem has expertise in IT development,and with client satisfaction.
+    
+    
+    
+      
+        
+       <p></p>
+        <mat-divider></mat-divider>
+      </mat-card-content>
+      
+        
+      
+      <mat-card-footer>
+        <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+      </mat-card-footer>
+      </mat-card></mat-card>
+    </mat-grid-tile>
+  <mat-grid-tile><br>
+    <mat-card><mat-card class="example-card">
+      <mat-card-header>
+        <mat-card-title ></mat-card-title>
+      
+       
+      </mat-card-header>
+      <mat-card-content><img src="./assets/w.svg" class="img" style="align-items: center;">
+        <h2  style="text-align: center;"><br>Junior Developers
+
+  
+        </h2>
+        <p style="text-align: center;">Our Junior Developers with  2 years of experience understand the client's needs and ensure that the entire process <br>matches requirements.
+  
+  
+        
+        
+    
+     
+    
+    
+    
+      
+        
+       <p></p>
+        <mat-divider></mat-divider>
+      </mat-card-content>
+      
+        
+      
+      <mat-card-footer>
+        <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+      </mat-card-footer>
+      </mat-card></mat-card>
+    </mat-grid-tile>
+  
+  <mat-grid-tile>
+    <br>
+    <mat-card><mat-card class="example-card">
+      <mat-card-header>
+        <mat-card-title ></mat-card-title>
+      
+       
+      </mat-card-header>
+      <mat-card-content>
+        <h2  style="text-align: center;"><img src="./assets/di.svg" class="img" style="align-items: center;"><br>Web Developers
+
+  
+        </h2>
+        <p style="text-align: center;">Web Developers of Hyperlink InfoSystem are outstanding and dedicated. We have a team of skilled web developers with several years of experience in the market. 
+  
+        
+    
+     
+    
+    
+    
+      
+        
+       <p></p>
+        <mat-divider></mat-divider>
+      </mat-card-content>
+      
+        
+      
+      <mat-card-footer>
+        <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+      </mat-card-footer>
+      </mat-card></mat-card>
+  </mat-grid-tile>
+  
+
+
+  
+  
+  
+  </mat-grid-list>
+  
+  
+  <app-footer><h4></h4></app-footer>
+  

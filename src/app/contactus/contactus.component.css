@@ -1,0 +1,49 @@
+.navbar {
+  
+    
+    background-color :rgb(247, 179, 53);
+    height: fit-content;
+    }
+    
+    span{
+        padding: 5px
+    }
+    .b1{
+        background-color: rgb(247, 179, 53);
+        border: none;
+        text-size-adjust: 10px;
+    }
+    mat-grid-tile {
+       background-color: greenyellow;
+      }
+      img{
+        width: 90%;height: 90%;
+       }
+    
+       .example-card {
+        max-width: 400px;
+        max-height: 250px;
+    
+      }
+      
+      .a1 {
+        max-width: 320px; max-height: 250px;
+    
+      }
+      
+      
+      .w1 {
+        background-color: #2a2d38;
+       }
+     
+       .footer{
+        background-color: ;
+        text-decoration-color: wheat
+        ;
+    }
+     
+    
+       
+      
+      
+      

@@ -1,0 +1,148 @@
+<mat-toolbar color="warn" class="navbar"> 
+    <span  >swastik infosystem</span>
+   <span >   <button mat-button color="white" routerLink="/home" routerLinkactive="active" >Home</button>
+  </span>
+  
+  <span><button mat-button [matMenuTriggerFor]="afterMenu" class="b1">Web Development</button>
+    <mat-menu #afterMenu="matMenu" xPosition="after">
+      <button mat-menu-item routerLink="/cpannel" routerLinkactive="active">PHP Development</button>
+      <button mat-menu-item routerLink="/domain" routerLinkactive="active">React Development</button>
+    </mat-menu></span>
+ 
+    <span >   <button mat-button color="white" routerLink="/hire" routerLinkactive="/contactus" >Hire Developer</button>
+    </span>
+
+  <span >   <button mat-button color="white" routerLink="/contact" routerLinkactive="/contact" >contactus</button>
+  </span>
+  
+  
+  </mat-toolbar>
+  <mat-grid-list cols="2" rowHeight="4:2.8">
+    <mat-grid-tile><h1 style="text-align: center;margin-top: 10px;">Web<br><h2>Development Company</h2><h4> #1 Rank as Top Web Development Company in India and USA</h4><br><br>
+      <button mat-raised-button  color="accent" (click)="openDialog()">Get Quote</button>
+     </h1> 
+     
+     
+    
+      <br></mat-grid-tile>
+    <mat-grid-tile><img src="./assets/banner4.jpg"></mat-grid-tile>
+    
+  </mat-grid-list>
+  <mat-grid-list  cols="5" rowHeight="2:1">
+    <h1 style="text-align: center;">Our Partenrs</h1>
+    <mat-grid-tile>
+<mat-card><img src="./assets/npci.png"></mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile><img src="./assets/hitachi.png"><mat-card></mat-card></mat-grid-tile>
+    <mat-grid-tile><mat-card><img src="./assets/ceat.png"></mat-card></mat-grid-tile>
+    <mat-grid-tile><mat-card><img src="./assets/disney.png"></mat-card></mat-grid-tile>
+    <mat-grid-tile><mat-card><img src="./assets/google.png"></mat-card></mat-grid-tile>
+    
+    
+  </mat-grid-list>
+  <mat-grid-list cols="1" rowHeight="4:1">
+  
+    <mat-grid-tile><h2 style="text-align: 
+    center;">swastik InfoSystem
+    <br>
+  <h4 style="text-align: 
+  center;">bbc
+    tata power
+    astral
+    Hyperlink InfoSystem
+    Because we deliver the best & we are unbeatable.
+    
+   swastik Infosystem is a renowned webdevelopment company & the best IT Software Solutions provider based in  USA & India, established in 2011.<br>
+    
+   swastik Infosystem  is well known to craft the most innovative & eye catchy websites. We offer a wide range of customized services in  website development,. Our skilled team & our products are engineered to bring growth to your business. We believe in delivering the services without compromising on time and quality.
+    
+    We are proud members of GESIA (Gujarat Electronics & Software Industries Association) and we are ISO 27001:2011 Certified Company</h4></h2></mat-grid-tile>
+    
+  
+</mat-grid-list >
+
+<mat-grid-list  cols="4" rowHzaeight="4.5:2.8">
+  
+  <mat-grid-tile>
+<mat-card><mat-card class="example-card">
+  <mat-card-header>
+    <mat-card-subtitle></mat-card-subtitle>
+    <mat-card-title ><img src="./assets/data.png" ><br>4500+<br></mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <p >websites
+      Developed</p>
+   <p></p>
+    <mat-divider></mat-divider>
+  </mat-card-content>
+  
+    
+  
+  <mat-card-footer>
+    <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+  </mat-card-footer>
+</mat-card></mat-card>
+  </mat-grid-tile>
+  <mat-grid-tile><mat-card class="example-card">
+    <mat-card-header>
+      <mat-card-subtitle></mat-card-subtitle>
+      <mat-card-title ><img src="./assets/data.png" ><br>4500+<br></mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <p >websites
+        Developed</p>
+     <p></p>
+      <mat-divider></mat-divider>
+    </mat-card-content>
+    
+      
+    
+    <mat-card-footer>
+      <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+    </mat-card-footer>
+  </mat-card></mat-grid-tile>
+  <mat-grid-tile><mat-card><mat-card class="example-card">
+    <mat-card-header>
+      <mat-card-subtitle></mat-card-subtitle>
+      <mat-card-title  style="align-content: center;"> <img src="./assets/devp.png" ><br>1000+
+
+      </mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <p>
+        Dedicated Developers <br>& Designers
+
+      </p>
+    
+
+    </mat-card-content>
+   
+    <mat-card-footer>
+      <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+    </mat-card-footer>
+  </mat-card> </mat-card></mat-grid-tile>
+  
+  <mat-grid-tile><mat-card class="example-card">
+      <mat-card-header>
+        <mat-card-subtitle></mat-card-subtitle>
+        <mat-card-title  style="align-content: center;"> <img src="./assets/review.png" ><br>4.9
+        </mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>
+          Ratings on
+Clutch.co</p>
+      
+ 
+      </mat-card-content>
+     
+      <mat-card-footer>
+        <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+      </mat-card-footer>
+    </mat-card></mat-grid-tile>
+  
+  
+</mat-grid-list>
+ 
+  
+  <app-footer><h4></h4></app-footer>

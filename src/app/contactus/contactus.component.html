@@ -1,0 +1,112 @@
+<mat-toolbar color="warn" class="navbar"> 
+    <span >Genius Hosting</span>
+   <span >   <button mat-button color="white" routerLink="/home" routerLinkactive="active" >Home</button>
+  </span>
+  
+  <span><button mat-button [matMenuTriggerFor]="afterMenu" class="b1">Web Hosting</button>
+    <mat-menu #afterMenu="matMenu" xPosition="after">
+      <button mat-menu-item routerLink="/cpannel" routerLinkactive="active">cPannel Hosting</button>
+      <button mat-menu-item>Business Hosting</button>
+    </mat-menu></span>
+  <span><button mat-button [matMenuTriggerFor]="afterMenu" class="b1" routerLink="/servers" routerLinkactive="active">Servers</button>
+    <mat-menu #afterMenu="matMenu" xPosition="after">
+      <button mat-menu-item>Windows VPS</button>
+      <button mat-menu-item>cloud Servers</button>
+    </mat-menu></span>
+  
+  <span ><button mat-button class="b1" routerLink="/domain" routerLinkactive="active">Domain</button>
+  </span>
+  <span><a routerLink="/domain" routerLinkactive="active"></a> </span>
+
+  <span>   <button mat-button color="white" routerLink="/contactus"  routerLinkactive="active" >contactus</button>
+  </span>
+  
+  
+  </mat-toolbar>
+  <mat-grid-list cols="2" rowHeight="4:1.4">
+    <mat-grid-tile><h2 style="text-align: center;margin-top: 10px;">Contact us, we're here to help!
+     <br><h5>Easily accessible customer service is crucial in today’s<br> 24-hour, online business environment. eUKhost’s <br>experienced team of senior technicians and sales<br> executives is available 24 hours a day, 7 days a week, <br>ensuring you have uninterrupted service and support. So, <br>no matter what day or time you need to contact us, help <br>is just a click or phone call away.</h5> <button mat-raised-button  color="accent" (click)="openDialog()">contact form</button>
+   </h2> 
+     
+     
+    
+      <br></mat-grid-tile>
+    <mat-grid-tile><img src="./assets/contact.webp"></mat-grid-tile>
+    
+  </mat-grid-list>
+  <mat-grid-list cols="3" rowHeight="2:1.1">
+    <mat-grid-tile><mat-card class="example-card">
+      <mat-card-header>
+        <mat-card-subtitle></mat-card-subtitle>
+        <mat-card-title ><mat-icon> email</mat-icon><br>
+          Open Ticket</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p  ></p>
+        <p>We're available 24 hours a day, 7<br> days a week to answer any queries<br> you may have.</p>
+        <mat-divider></mat-divider>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-raised-button color="primary">Open Support Ticket</button>
+      </mat-card-actions>
+      <mat-card-footer>
+        <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+      </mat-card-footer>
+    </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile><mat-card class="example-card">
+      <mat-card-header>
+        <mat-card-subtitle></mat-card-subtitle>
+        <mat-card-title ><mat-icon align-items:center; >headset_mic</mat-icon><br>
+
+          Live Chat</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p  ></p>
+        <p  >Every solution includes an account<br> manager ready to help should the ,<br>need arise.</p>
+        <mat-divider></mat-divider>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-raised-button color="primary" >Open Support Ticket</button>
+      </mat-card-actions>
+      <mat-card-footer>
+        <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+      </mat-card-footer>
+    </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile><mat-card class="example-card">
+      <mat-card-header>
+        <mat-card-subtitle></mat-card-subtitle>
+      
+        <mat-card-title  ><mat-icon style="margin-left: 10px;">phone</mat-icon><br>Phone Contact</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p  ></p>
+       <h6>Calls to 01 numbers are free from UK mobiles if<br> included in your allowance, calls from outside of the <br>United Kingdom must include +44 and may cost more.<br> Please contact your provider for further details</h6>
+        <mat-divider></mat-divider>
+      </mat-card-content>
+      <mat-card-actions >
+        <button mat-raised-button color="primary" >Open Support Ticket</button>
+        
+      </mat-card-actions>
+      <mat-card-footer>
+        <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+      </mat-card-footer>
+    </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list >
+  
+  <mat-grid-list cols="3" rowHeight="8.5:2">
+    <mat-grid-tile><h4>Professional Support 24/7<br>
+      <h5>Expert technical support available all day, every day by phone, ticket or live chat.</h5> </h4>
+     </mat-grid-tile>
+    <mat-grid-tile><h4>Free Migration <br>
+      <h5> Moving to eukhost is easy, we’ll take care of the migration for you - and for FREE</h5></h4>
+   </mat-grid-tile>
+    <mat-grid-tile><h4>30-Day, Money-Back Guarantee<br>
+      <h5>You'll love our plans that all include a 30-day, money-back guarantee.</h5></h4>
+    </mat-grid-tile>
+   
+  </mat-grid-list>
+  
+  <app-footer><h4></h4></app-footer>
